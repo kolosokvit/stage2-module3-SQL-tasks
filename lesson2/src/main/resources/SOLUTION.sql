@@ -27,12 +27,12 @@ INSERT INTO paymenttype (name) VALUES ('DAILY');
 INSERT INTO paymenttype (name) VALUES ('WEEKLY');
 INSERT INTO paymenttype (name) VALUES ('MONTHLY');
 
-INSERT INTO payment (type_id, amount, student_id) VALUES (2, 500.00, 1);
-INSERT INTO payment (type_id, amount, student_id) VALUES (3, 2000.00, 4);
-INSERT INTO payment (type_id, amount, student_id) VALUES (2, 500.00, 7);
-INSERT INTO payment (type_id, amount, student_id) VALUES (1, 150.00, 5);
-INSERT INTO payment (type_id, amount, student_id) VALUES (2, 500.00, 10);
-INSERT INTO payment (type_id, amount, student_id) VALUES (3, 1500.00, 2);
+INSERT INTO payment (type_id, amount, payment_date, student_id) VALUES (2, 500.00, '2020-03-27 00:18:05', 1);
+INSERT INTO payment (type_id, amount, payment_date, student_id) VALUES (3, 2000.00, '2020-03-27 00:18:05', 4);
+INSERT INTO payment (type_id, amount, payment_date, student_id) VALUES (2, 500.00, '2020-04-15 14:18:05', 7);
+INSERT INTO payment (type_id, amount, payment_date, student_id) VALUES (1, 150.00, '2020-11-01 15:18:05', 5);
+INSERT INTO payment (type_id, amount, payment_date, student_id) VALUES (2, 500.00, '2020-08-11 16:18:05', 10);
+INSERT INTO payment (type_id, amount, payment_date, student_id) VALUES (3, 1500.00, '2020-06-19 17:18:05', 2);
 
 INSERT INTO mark (student_id, subject_id, mark) VALUES (2, 1, 8);
 INSERT INTO mark (student_id, subject_id, mark) VALUES (4, 4, 5);

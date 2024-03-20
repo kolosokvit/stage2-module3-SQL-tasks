@@ -23,9 +23,9 @@ INSERT INTO subject (name, grade) VALUES ('IT', 4);
 INSERT INTO subject (name, grade) VALUES ('AI', 5);
 INSERT INTO subject (name, grade) VALUES ('Java', 5);
 
-INSERT INTO payment_type (name) VALUES ('DAILY');
-INSERT INTO payment_type (name) VALUES ('WEEKLY');
-INSERT INTO payment_type (name) VALUES ('MONTHLY');
+INSERT INTO paymenttype (name) VALUES ('DAILY');
+INSERT INTO paymenttype (name) VALUES ('WEEKLY');
+INSERT INTO paymenttype (name) VALUES ('MONTHLY');
 
 INSERT INTO payment (type_id, amount, student_id) VALUES (2, 500.00, 1);
 INSERT INTO payment (type_id, amount, student_id) VALUES (3, 2000.00, 4);

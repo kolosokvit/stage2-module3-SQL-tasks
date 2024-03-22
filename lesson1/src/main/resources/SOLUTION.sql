@@ -10,13 +10,13 @@ name VARCHAR(100) NOT NULL,
 description VARCHAR(100) NOT NULL,
 grade INT NOT NULL);
 
-CREATE TABLE payment_type(
+CREATE TABLE paymenttype(
 id BIGINT NOT NULL PRIMARY KEY,
 name VARCHAR(100) NOT NULL);
 
 CREATE TABLE payment (
 id BIGINT NOT NULL PRIMARY KEY,
-type_id BIGINT REFERENCES payment_type(id) NOT NULL,
+type_id BIGINT REFERENCES paymenttype(id) NOT NULL,
 amount DECIMAL(10, 2) NOT NULL,
 student_id BIGINT REFERENCES student(id) NOT NULL,
 payment_date TIMESTAMP);
